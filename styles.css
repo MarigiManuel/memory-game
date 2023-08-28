@@ -1,0 +1,28 @@
+.memory-game {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.memory-card {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.memory-card.matched {
+    background-color: #4caf50;
+}
+
+.hidden {
+    display: none;
+}
